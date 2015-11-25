@@ -32,7 +32,7 @@ $INSTALL_CLOUD9_IDE = <<SCRIPT
 
 echo "Cloning Cloud9 Core"
 cd /vagrant
-git clone https://github.com/w3aran/core.git Cloud9IDE
+git clone https://github.com/c9/core.git Cloud9IDE
 echo "Install Cloud9 IDE"
 cd Cloud9IDE
 scripts/install-sdk.sh
@@ -43,6 +43,6 @@ $START_CLOUD9_IDE = <<SCRIPT
 
 echo "Start Cloud9 IDE Standalone application"
 cd /vagrant/Cloud9IDE
-WORKSPACE_DIR="../workspace" forever start server.js -a vagrant:vagrant -l "10.0.0.222"
+forever start server.js -p 8181 -l 0.0.0.0 -a : -w "/vagrant/workspace"
 
 SCRIPT

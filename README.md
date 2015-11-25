@@ -16,4 +16,4 @@ VagrantCloud9Ide helps to setup Cloud9 standalone browser based IDE locally in y
 1. Clone git repository: `git clone https://github.com/w3aran/vagrant-cloud9-ide.git`
 2. `cd vagrant-cloud9-ide`
 3. Start the Vagrant Box: `vagrant up`
-4. Open the browser and visit `http://10.0.0.222:8181/` to open the Cloud9 IDE (Username: `vagrant`, Password: `vagrant`)
+4. Open the browser and visit `http://10.0.0.222:8181/` to open the Cloud9 IDE
