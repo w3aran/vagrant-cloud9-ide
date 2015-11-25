@@ -2,7 +2,7 @@
 
 VagrantCloud9Ide helps to setup Cloud9 standalone browser based IDE locally in your computer.
 
-Cloud9 is an open source IDE built with Node.JS on the back-end and JavaScript/HTML5 on the client. Cloud9 balances the power of traditional desktop IDEs with the simplicity and elegance of editors like TextMate and Sublime.
+[Cloud9](https://github.com/c9/core) is an open source IDE built with Node.JS on the back-end and JavaScript/HTML5 on the client. Cloud9 balances the power of traditional desktop IDEs with the simplicity and elegance of editors like TextMate and Sublime.
 
 ## Prerequisites
 
