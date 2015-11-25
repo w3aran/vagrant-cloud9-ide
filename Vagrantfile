@@ -36,8 +36,6 @@ git clone https://github.com/w3aran/core.git Cloud9IDE
 echo "Install Cloud9 IDE"
 cd Cloud9IDE
 scripts/install-sdk.sh
-echo "Start Cloud9 IDE Standalone application"
-WORKSPACE_DIR="../workspace" forever start server.js -a vagrant:vagrant -l "10.0.0.222" --port 8080
 
 SCRIPT
 
@@ -45,6 +43,6 @@ $START_CLOUD9_IDE = <<SCRIPT
 
 echo "Start Cloud9 IDE Standalone application"
 cd /vagrant/Cloud9IDE
-WORKSPACE_DIR="../workspace" forever start server.js -a vagrant:vagrant -l "10.0.0.222" --port 8080
+WORKSPACE_DIR="../workspace" forever start server.js -a vagrant:vagrant -l "10.0.0.222"
 
 SCRIPT
