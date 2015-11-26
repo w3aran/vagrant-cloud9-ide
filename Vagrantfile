@@ -31,7 +31,7 @@ SCRIPT
 $INSTALL_CLOUD9_IDE = <<SCRIPT
 
 echo "Cloning Cloud9 Core"
-cd /vagrant
+cd /home/vagrant
 git clone https://github.com/c9/core.git Cloud9IDE
 echo "Install Cloud9 IDE"
 cd Cloud9IDE
@@ -42,7 +42,7 @@ SCRIPT
 $START_CLOUD9_IDE = <<SCRIPT
 
 echo "Start Cloud9 IDE Standalone application"
-cd /vagrant/Cloud9IDE
+cd /home/vagrant/Cloud9IDE
 forever start server.js -p 8181 -l 0.0.0.0 -a : -w "/vagrant/workspace"
 
 SCRIPT
